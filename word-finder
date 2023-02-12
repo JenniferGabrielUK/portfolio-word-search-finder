@@ -11,7 +11,11 @@ int main() {
 	std::string word_read{};
 	int word_count{ 0 };
 	int match_count{ 0 };
-  
+ in_file.open("Romeo-and-Juliet.txt");
+	if (!in_file) {
+		std::cerr << "Error loading file." << std::endl;
+		return 1;
+		} 
   
   return 0;
 }
