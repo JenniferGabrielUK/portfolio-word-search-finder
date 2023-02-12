@@ -4,6 +4,13 @@
 #include <string>
 #include <iomanip>
 
+bool find_substring(const std::string& word_to_find, const std::string &word_read) {
+	std::size_t found = word_read.find(word_to_find);
+	if (found == std::string::npos)
+		return 0;
+	else 
+		return 1;
+}
 
 int main() {
   std::ifstream in_file{};
