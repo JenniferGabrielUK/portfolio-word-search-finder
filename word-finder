@@ -16,6 +16,7 @@ int main() {
 		std::cerr << "Error loading file." << std::endl;
 		return 1;
 		} 
-  
+  std::cout << "Enter the substring to search for: ";
+  std::cin >> word_to_find;
   return 0;
 }
