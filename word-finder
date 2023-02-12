@@ -31,5 +31,10 @@ int main() {
 			++match_count;
 			std::cout << word_read << " ";
 		}
+  }
+  std::cout << std::endl << std::endl;
+  std::cout << word_count << " words were searched..." << std::endl;
+  std::cout << word_to_find << " was found; " << match_count << " times." << std::endl;
+  in_file.close();
   return 0;
 }
